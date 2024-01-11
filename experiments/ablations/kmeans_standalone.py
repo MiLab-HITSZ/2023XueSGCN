@@ -23,7 +23,6 @@ class AveragePrecisionMeter(object):
         self.difficult_examples = difficult_examples
 
     def reset(self):
-        """将计量器的成员变量重置为空"""
         self.scores = torch.FloatTensor(torch.FloatStorage())
         self.targets = torch.LongTensor(torch.LongStorage())
 
